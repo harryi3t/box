@@ -12,8 +12,23 @@ integrations:
   hub:
     - integrationName: "docker-test"
       type: docker
-    - integrationName: "slack-test"
+    - integrationName: slack-test
       type: slack
-      recepients:
-        - "#test-issues"
-        - "@harryi3t"
+      recipients:
+        - '@harryi3t'
+        - '#test-issues'
+
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
+    - integrationName: hipchat-test
+      type: hipchat
+      recipients:
+        - '@harryi3t'
+        - 'test-issues'
+
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
