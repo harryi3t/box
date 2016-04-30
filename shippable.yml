@@ -16,7 +16,7 @@ integrations:
       type: slack
       recipients:
         - '@harryi3t'
-        - '#test-issues'
+        - '#testissues'
 
       on_start: always
       on_pull_request: always
@@ -25,8 +25,8 @@ integrations:
     - integrationName: hipchat-test
       type: hipchat
       recipients:
-        - '@harryi3t'
-        - 'test-issues'
+        - '@HarendraSingh'
+        - 'testissues'
 
       on_start: always
       on_pull_request: always
