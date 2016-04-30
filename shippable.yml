@@ -12,3 +12,8 @@ integrations:
   hub:
     - integrationName: "docker-test"
       type: docker
+    - integrationName: "slack-test"
+      type: slack
+      recepients:
+        - "#test-issues"
+        - "@harryi3t"
